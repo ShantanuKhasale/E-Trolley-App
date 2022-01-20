@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trolley">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <permission
+        android:name="android.permission.BLUETOOTH"
+        android:label="BLUETOOTH" />
+    <permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature android:name="android.hardware.bluetooth" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_cart"
+        android:label="e-Trolley"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trolley"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".GoCartAnimation"
+            android:exported="true" />
+        <activity
+            android:name=".ShowQrAnimationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".barcodeScanner"
+            android:exported="true" />
+        <activity
+            android:name=".scannerView"
+            android:exported="true" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotepadActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:exported="true"
+            android:theme="@style/Theme.Trolley.popMe" />
+        <activity
+            android:name=".ReminderActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Trolley.popMe" />
+        <activity
+            android:name=".CartActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

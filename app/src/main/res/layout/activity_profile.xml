@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:fitsSystemWindows="true">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/boxAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/profileman" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:translationY="665dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/startbutton" />
+
+    <Button
+        android:id="@+id/buttonStartShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="692dp"
+        android:layout_marginHorizontal="52dp"
+        android:background="@android:color/transparent"
+        android:text="Start Shopping"
+        android:layout_centerInParent="@+id/startButton"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/LinerLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Username"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="manjeet thakur"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Email"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="270dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:text="nishu.thakur99@gmail.com"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Phone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="7768947932"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+
+
+</RelativeLayout>

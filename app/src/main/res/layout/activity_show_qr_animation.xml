@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowQrAnimationActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/qrentanimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/qranimation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Scan QR Code... \n To connect with your trolley"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/qrentanimation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

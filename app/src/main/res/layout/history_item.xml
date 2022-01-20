@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Invoice- "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="157"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Total: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="25075"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Date: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="2021-10-05 16:31:47"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
